@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <title>Tailwind</title>
+</head>
+<body>
+    <header>
+        <div class="container mx-auto">
+        <h1 class="text-4xl text-pink-700"><a href="index.html">DT193G</a></h1>
+    <nav>
+        <ul class="flex items-center flex-wrap p-6 ">
+            <li class="mr-6"><a class="bg-white inline-block text-pink-500 hover:text-blue-800 font-semibold" href="index.html">Start</a></li>
+            <li class="mr-6"><a class="bg-white inline-block text-pink-500 hover:text-blue-800 font-semibold" href="bootstrap.html">Bootstrap</a></li>
+            <li class="mr-6"><a class="bg-white inline-block text-pink-500 hover:text-blue-800 font-semibold" href="tailwind.html">Tailwind</a></li>
+            <li class="mr-6"><a class="bg-white inline-block text-pink-500 hover:text-blue-800 font-semibold" href="pub.html">Publicering</a></li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+    <main>
+<div class="container mx-auto">
+<article>
+<h2 class="text-2xl text-pink-800 text-center m-3">Tailwind</h2>
+<p class="p-5">Tailwind är ett CSS-ramverk som skiljer sig från andra CSS-ramverk eftersom de inte tillhandahåller en serie förfinade klasser för element, knappar, tabeller. Det finns istället en "verktygslåda" med CSS-klasser för att style varje element själv. 
+    Det gör att Tailwind CSS kan anpassas mer. Det kan användas i olika projekt genom att använda CDN, installera via pakethanterare eller ladda ner källkoden.</p>
+    <br> <a class= "m-5 shadow bg-purple-500 text-white hover:bg-purple-400 py-1 px-2 rounded" href="https://tailwindcss.com/">Tailwindcss officiella hemsida</a>
+    <p class="text-lime-600 p-5">Fördelen med Tailwindcss är att det går att anpassa designen nästan hur man vill utifrån den "verktygslåda" som finns. Det går snabbare att använda Tailwind än att skriva all CSS-kod själv. Det blir inte lika tydligt att man använt just ramverket Tailwind till sin webbplats. Det finns bra dokumentation.
+    </p>
+    <p class="text-red-600 p-5">
+    Nackdelen är att det krävs mer jobb för att få en enklare webbplats och man behöver tänka mer på responsivitet osv. Du får helt enkelt inte lika mycket "gratis" med Tailwind utan du behöver själv lägga ner lite mer tid jämfört med Bootstrap eller Milligram exempelvis. Men då går inte de att anpassa lika mycket istället. 
+    Det beror helt enkelt på vad man ska använda ramverket till. 
+    </p>
+
+    
+</article>
+<article>
+    <h2 class="text-2xl text-pink-800 text-center m-3">Gruppträningpass måndagar och tisdagar</h2>
+    <table class="table-auto">
+        <thead class="bg-gray-950 text-white">
+          <tr>
+            <th>Dag och tid</th>
+            <th>Pass</th>
+            <th>Plats</th>
+            <th>Beskrivning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-300">
+            <th> Mån 18.00</th>
+            <td>Spinning</td>
+            <td>Korpstugan</td>
+            <td>Inomhuscykling är en skonsam träningsform för konditionen</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th>Mån 18.30</th>
+            <td>Gympa</td>
+            <td>Böle skola</td>
+            <td>Gympa är en allsidig träningform där man tränar kondition, styrka, koordination och rörlighet</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th>Mån 19.00</th>
+            <td>Cirkelträning</td>
+            <td>Söråker</td>
+            <td>Stationsträning för hela kroppen med/utan vikter.</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th>Tis 18.00</th>
+            <td>Spinning</td>
+            <td>Korpstugan</td>
+            <td>Inomhuscykling är en skonsam träningsform för konditionen</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th>Tis 18.00</th>
+            <td>Gympa</td>
+            <td>Mariedalsskolan</td>
+            <td>Gympa är en allsidig träningform där man tränar kondition, styrka, koordination och rörlighet</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th>Tis 18.30</th>
+            <td>Vattenträning</td>
+            <td>Timrå simhall</td>
+            <td>Vattenträning är en skonsam träningsform där man gör olika övningar med vattnet som motstånd</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th>Tis 19.00</th>
+            <td>Styrka överkropp</td>
+            <td>Korpstugan</td>
+            <td>Styrketräning för mage, rygg, armar, axlar och bröst med skivstänger och hantlar</td>
+          </tr>
+        </tbody>
+      </table>
+</article>
+<article>
+    <h3 class="text-2xl text-pink-800 text-center m-3">Lägg till ett nytt träningspass</h2>
+        <form class="w-full max-w-sm block m-auto">
+            <div class="w-full ">
+                <br><p>Välj dag</p>
+                    <input type="checkbox" class="mr-2 leading-tight" id="monday">
+                    <label for="monday">Måndag</label>
+                    <input type="checkbox" class="mr-2 leading-tight" id="tuesday">
+                    <label for="tuesday">Tisdag</label>
+                    <input type="checkbox" class="mr-2 leading-tight" id="wednesday">
+                    <label for="wednesday">Onsdag</label>
+                    <input type="checkbox" class="mr-2 leading-tight" id="thursday">
+                    <label for="thursday">Torsdag</label>
+                    <input type="checkbox" class="mr-2 leading-tight" id="friday">
+                    <label for="friday">Fredag</label>
+                    <input type="checkbox" class="mr-2 leading-tight" id="saturday">
+                    <label for="saturday">Lördag</label>
+                </div>
+                 <br><p>Välj tid</p>
+                    <input type="radio" id="first" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="first">18.00</label>
+                    <input type="radio" id="second" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="second">18.30</label>
+                    <input type="radio" id="third" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="third">19.00</label><br>
+              <br><label for="pass">Träningspass:</label>
+              <input type="text" class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-500" id="pass">
+              <label for="location">Plats: </label>
+              <select class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-500" id="location">
+                <option selected>Välj en plats</option>
+                <option value="mariedal">Mariedal</option>
+                <option value="böle skola">Böle skola</option>
+                <option value="söråker">Söråker</option>
+                <option value="korpstugan">Korpstugan</option>
+                <option value="simhallen">Timrå simhall</option>
+                </select>
+                    <br><label for="info">Beskrivning:</label>
+                    <br><textarea class="w-full appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-500"" id="info"></textarea>
+            <input type="submit" value="Lägg till" class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+        </div></form>
+</article>
+</div>
+    </main>
+    
+    <footer class="bg-pink-100 m-4 p-5 text-center"> 
+        <div class="container mx-auto">
+             <p>Webbutvecklingsprogrammet Mittuniversitetet
+            <br>
+        DT193G - Fullstack-utveckling med ramverk
+        <br>
+        © Erika Vestin | 2023 
+    </p>
+    </div>
+    </footer>
+</body>
+</html>

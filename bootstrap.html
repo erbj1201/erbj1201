@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header>
+        <h1><a class="navbar-brand" href="index.html">DT193G</a></h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-center">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link " href="index.html">Start</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="tailwind.html">Tailwind</a></li>
+        <li class="nav-item"><a class="nav-link"  href="pub.html">Publicering</a></li>
+    </ul>
+</nav>
+    </header>
+    <main>
+<div class="container">
+<article class="pt-5">
+    <h2 class="text-uppercase text-center text-success mb-4">Bootstrap</h2>
+    <p>Bootstrap är ett ramverk för CSS. Det kan användas i olika projekt genom att använda CDN, installera via pakethanterare eller ladda ner källkoden. 
+        Du kan anpassa Bootstrap med hjälp av Sass och importera de komponter du behöver. Läs mer på <a href="https://getbootstrap.com/">Boostraps officiella hemsida</a>.</p>
+    <p class="text-success">Jag tycker att ramverket har fördelar så som att det går snabbt att skapa en grund för en enklare webbplats. 
+        Dokumentationen är väldigt bra och enkel att följa, lätt att komma igång. Man sparar mycket tid på att inte behöva skriva css för responsivitet, formulär och tabeller. 
+        Jag kommer garanterat använda bootstrap igen, eventuellt att jag kan använda Bootstrap till exempelvis formulär och komplettera med egen css.</p>
+        <p class="text-danger">Några nackdelar är att eftersom jag är van vid att koda allt själv tycker jag att det är lite "låst" jämfört med att skapa något själv. 
+        Det går inte att göra "vad som helst". Kanske att det går att anpassa mer om man laddar ner npm-paketet istället för att använda CDN som jag gjorde nu för då kan man skriva egen Sass som transpileras till css.
+        Jag kan komma på flera webbplatser som jag brukar besöka ofta som använder sig av bootstrap. Webbplatserna blir lik varandra vilket är en nackdel. Det är viktigt att skapa en webbplats som sticker ut tycker jag. 
+        Det blir också ganska mycket HTML-kod när alla klasser ska vara med för stylingen, mer än när jag gör en design själv.</p>
+</article>
+<article class="pt-5">
+<h3 class="text-success mb-4 text-center">Gruppträningpass måndagar och tisdagar</h3>
+<table class="table table-sm table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Dag och tid</th>
+        <th scope="col">Pass</th>
+        <th scope="col">Plats</th>
+        <th scope="col">Beskrivning</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"> Mån 18.00</th>
+        <td>Spinning</td>
+        <td>Korpstugan</td>
+        <td>Inomhuscykling är en skonsam träningsform för konditionen</td>
+      </tr>
+      <tr>
+        <th scope="row">Mån 18.30</th>
+        <td>Gympa</td>
+        <td>Böle skola</td>
+        <td>Gympa är en allsidig träningform där man tränar kondition, styrka, koordination och rörlighet</td>
+      </tr>
+      <tr>
+        <th scope="row">Mån 19.00</th>
+        <td>Cirkelträning</td>
+        <td>Söråker</td>
+        <td>Stationsträning för hela kroppen med/utan vikter.</td>
+      </tr>
+      <tr>
+        <th scope="row">Tis 18.00</th>
+        <td>Spinning</td>
+        <td>Korpstugan</td>
+        <td>Inomhuscykling är en skonsam träningsform för konditionen</td>
+      </tr>
+      <tr>
+        <th scope="row">Tis 18.00</th>
+        <td>Gympa</td>
+        <td>Mariedalsskolan</td>
+        <td>Gympa är en allsidig träningform där man tränar kondition, styrka, koordination och rörlighet</td>
+      </tr>
+      <tr>
+        <th scope="row">Tis 18.30</th>
+        <td>Vattenträning</td>
+        <td>Timrå simhall</td>
+        <td>Vattenträning är en skonsam träningsform där man gör olika övningar med vattnet som motstånd</td>
+      </tr>
+      <tr>
+        <th scope="row">Tis 19.00</th>
+        <td>Styrka överkropp</td>
+        <td>Korpstugan</td>
+        <td>Styrketräning för mage, rygg, armar, axlar och bröst med skivstänger och hantlar</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+<article class="pt-5">
+    <h3 class="text-success mb-4 text-center">Lägg till ett nytt träningspass</h3>
+    <form>
+        <p>Välj dag</p>
+        <div class="form-group">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="monday">
+                <label class="form-check-label" for="monday">Måndag</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="tuesday">
+                <label class="form-check-label" for="tuesday">Tisdag</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="wednesday">
+                <label class="form-check-label" for="wednesday">Onsdag</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="thursday">
+                <label class="form-check-label" for="thursday">Torsdag</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="friday">
+                <label class="form-check-label" for="friday">Fredag</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="saturday">
+                <label class="form-check-label" for="saturday">Lördag</label>
+              </div></div>
+              <p>Välj tid</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="first" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="first">18.00</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="second" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="second">18.30</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="third" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="third">19.00</label>
+              </div>
+        <div class="form-group">
+          <label for="pass">Träningspass:</label>
+          <input type="text" class="form-control" id="pass">
+        </div>
+        <div class="form-group">
+          <label for="location">Plats: </label>
+          <select class="form-control custom-select" id="location">
+            <option selected>Välj en plats</option>
+            <option value="mariedal">Mariedal</option>
+            <option value="böle skola">Böle skola</option>
+            <option value="söråker">Söråker</option>
+            <option value="korpstugan">Korpstugan</option>
+            <option value="simhallen">Timrå simhall</option>
+            </select>
+            <div class="form-group">
+                <label for="info">Beskrivning:</label>
+                <textarea class="form-control" id="info"></textarea>
+              </div>
+        <input type="submit" value="Lägg till" class="btn btn-primary">
+    </div></form>
+</article>
+</div>
+    </main>
+    <footer class="bg-light text-center"> 
+        <div class="container">
+        <p>Webbutvecklingsprogrammet Mittuniversitetet
+            <br>
+        DT193G, Fullstack-utveckling med ramverk
+        <br>
+        © Erika Vestin | 2023 
+    </p>
+</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
